@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+      format("woff2"),
+    url("../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-clr: hsl(0, 0%, 100%);
+  --green-clr: hsl(75, 94%, 57%);
+  --strong-black: hsl(0, 0%, 8%);
+  --medium-black: hsl(0, 0%, 12%);
+  --light-black: hsl(0, 0%, 20%);
+  --primary-font: "Inter";
+}
+
+::selection {
+  background-color: var(--font-clr);
+  color: var(--light-black);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: var(--strong-black);
+  height: 100svh;
+  width: 100svw;
+  font-family: var(--primary-font);
+}
+
+img {
+  border-radius: 50%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  height: 100svh;
+  width: 30svw;
+}
+.intro {
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+.profile {
+  background-color: var(--medium-black);
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 70%;
+  height: 70svh;
+}
+
+.accounts {
+  list-style: none;
+}
+.profiles {
+  width: 100%;
+  flex-direction: column;
+}
+.accounts .social-accounts {
+  text-decoration: none;
+  color: var(--font-clr);
+  text-align: center;
+  background-color: var(--light-black);
+  width: 15rem;
+  margin: 0.5rem;
+  height: 2.5rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+.address {
+  color: var(--green-clr);
+}
+
+.role-work {
+  color: var(--font-clr);
+}
+
+.user-name {
+  color: var(--font-clr);
+}
+.social-accounts:hover {
+  background-color: var(--green-clr);
+  color: var(--strong-black);
+}
+
+@media (width < 420px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .profile {
+    width: max(15rem, 80%);
+    height: max(85svh, 39rem);
+    text-align: center;
+  }
+}
+@media (width > 420px) and (width < 700px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .profile {
+    width: 20rem;
+    height: 85svh;
+  }
+}
+@media (width > 700px) and (width < 1300px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .profile {
+    width: 20rem;
+    height: 85svh;
+  }
+}
