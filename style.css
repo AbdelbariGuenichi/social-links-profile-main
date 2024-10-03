@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+html {
+  font-display: swap;
+}
+
 :root {
   --font-clr: hsl(0, 0%, 100%);
   --green-clr: hsl(75, 94%, 57%);
