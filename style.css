@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Inter";
   src: url("/assets/fonts/inter-variablefont_slnt\,wght.ttf") format("woff2"),
     url("/assets/fonts/inter-variablefont_slnt\,wght.ttf") format("woff"),
@@ -6,11 +6,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-}
-
-html {
-  font-display: swap;
-}
+} these lines of code does not load on vercel and i can't figure out why*/
 
 :root {
   --font-clr: hsl(0, 0%, 100%);
@@ -18,7 +14,7 @@ html {
   --strong-black: hsl(0, 0%, 8%);
   --medium-black: hsl(0, 0%, 12%);
   --light-black: hsl(0, 0%, 20%);
-  --primary-font: "Inter";
+  --primary-font: tahoma, sans-serif;
 }
 
 ::selection {
