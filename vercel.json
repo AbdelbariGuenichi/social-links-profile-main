@@ -1,0 +1,8 @@
+{
+  "headers": [
+    {
+      "source": "/fonts/(.*)",
+      "headers": [{ "key": "Content-Type", "value": "font/woff2" }]
+    }
+  ]
+}
